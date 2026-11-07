@@ -8,15 +8,6 @@ Autora: Carolina Carvalho
 
 [Descreva em 2 ou 3 linhas. Exemplo: permite cadastrar imóveis (casas e apartamentos), proprietários, locatários e corretores, registrar locações e enviar a cobrança do aluguel ao locatário.]
 
-## Telas
-
-[Troque pelas suas telas.]
-
-![Tela inicial](docs/01-tela-inicial.png)
-
-![Cadastro de imóveis](docs/02-cadastro-imoveis.png)
-
-![Locação](docs/03-locacao.png)
 
 ## Conceitos de POO aplicados
 
