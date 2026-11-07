@@ -1,18 +1,62 @@
-## Getting Started
+# Sistema de Imobiliária
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Sistema de gestão de locação de imóveis desenvolvido em **Java** para a disciplina de **Programação Orientada a Objetos (POO)**, no curso de Análise e Desenvolvimento de Sistemas (SENAI).
 
-## Folder Structure
+Autora: Carolina Carvalho
 
-The workspace contains two folders by default, where:
+## O que o sistema faz
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+[Descreva em 2 ou 3 linhas. Exemplo: permite cadastrar imóveis (casas e apartamentos), proprietários, locatários e corretores, registrar locações e enviar a cobrança do aluguel ao locatário.]
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Telas
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+[Troque pelas suas telas.]
 
-## Dependency Management
+![Tela inicial](docs/01-tela-inicial.png)
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+![Cadastro de imóveis](docs/02-cadastro-imoveis.png)
+
+![Locação](docs/03-locacao.png)
+
+## Conceitos de POO aplicados
+
+- **Herança:** `Casa` e `Apartamento` herdam de `Imovel`; `Proprietario`, `Locatario` e `Corretor` herdam de `Pessoa`
+- **Encapsulamento:** atributos privados com acesso por getters e setters
+- **Polimorfismo:** [confirme se há métodos sobrescritos]
+- **Interface:** `ReceberValor` [confirme se é interface]
+
+## Estrutura do projeto
+
+    imobiliaria/
+    ├── src/
+    │   ├── Pessoa.java
+    │   ├── Proprietario.java
+    │   ├── Locatario.java
+    │   ├── Corretor.java
+    │   ├── Imovel.java
+    │   ├── Casa.java
+    │   ├── Apartamento.java
+    │   ├── Locacao.java
+    │   ├── ReceberValor.java
+    │   └── Main.java
+    ├── lib/
+    └── README.md
+
+## Como executar
+
+Pré-requisito: JDK 17 ou superior.
+
+Na pasta do projeto:
+
+    javac -d bin src/*.java
+    java -cp bin Main
+
+Ou abra a pasta no VS Code com a extensão Java e rode o `Main.java`.
+
+## Tecnologias
+
+Java · Programação Orientada a Objetos · [Swing / JavaFX / outra, se houver]
+
+## Contato
+
+[LinkedIn](https://www.linkedin.com/in/carolina-carvalho-7a60711b9/) · [GitHub](https://github.com/cacarvalhoo)
