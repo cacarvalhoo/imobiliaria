@@ -6,15 +6,16 @@ Autora: Carolina Carvalho
 
 ## O que o sistema faz
 
-[Descreva em 2 ou 3 linhas. Exemplo: permite cadastrar imóveis (casas e apartamentos), proprietários, locatários e corretores, registrar locações e enviar a cobrança do aluguel ao locatário.]
-
+Sistema de console que modela a locação de imóveis. Uma locação relaciona um locatário, um proprietário, um corretor e um imóvel (casa ou apartamento). O sistema calcula o aluguel de cada tipo de imóvel, envia a cobrança ao locatário, divide o pagamento entre o proprietário e a comissão do corretor, e controla o saldo de comissões do corretor, com opção de saque.
 
 ## Conceitos de POO aplicados
 
 - **Herança:** `Casa` e `Apartamento` herdam de `Imovel`; `Proprietario`, `Locatario` e `Corretor` herdam de `Pessoa`
-- **Encapsulamento:** atributos privados com acesso por getters e setters
-- **Polimorfismo:** [confirme se há métodos sobrescritos]
-- **Interface:** `ReceberValor` [confirme se é interface]
+- **Classes abstratas:** `Pessoa` e `Imovel`
+- **Polimorfismo:** `calcularAluguel()` é sobrescrito em `Casa` e `Apartamento`, e `receber()` em `Proprietario` e `Corretor`
+- **Interface:** `ReceberValor`, implementada por `Proprietario` e `Corretor`
+- **Encapsulamento:** atributos privados com getters e setters
+- **Associação:** `Locacao` relaciona locatário, corretor, proprietário e imóvel
 
 ## Estrutura do projeto
 
